@@ -173,7 +173,7 @@
             {
               
               top: 0;
-              margin-left: 10px;
+              margin-left: 5px;
               /* justify-content: center; */
               background-color: #111;
               width: 100%;
@@ -190,9 +190,202 @@
                 overflow: hidden;
                 margin-left: 0px;
             }
+            
             .navigation-manual {
-                margin-left: -10px;
+                margin-left: 30px;
               }
+              
+              .before {
+                margin-right: 35px;
+            }
+            /*.det {*/
+            /*    margin-right: 50px;*/
+            /*}*/
+            
           }
 
-    
+          @media screen and (min-width: 1000px) {
+            
+            .timer{
+              margin-left: 600px;
+            }
+            /*.det {*/
+            /*    margin-right: 50px;*/
+            /*}*/
+            
+          }
+
+
+
+.speakers
+{
+
+width: 100%;
+display: inline-block;
+
+}
+        
+	.card
+	{
+		position: relative;
+		float:left;
+		width: 320px;
+		height: 190px;
+		background: #fff;
+		margin: 40px;
+		border-radius: 20px;
+		box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+		transition: 0.5s;
+	}
+	.card2
+	{
+		position: relative;
+		float:left;
+		width: 320px;
+		height: 190px;
+		background: #fff;
+		margin: 40px;
+		border-radius: 20px;
+		box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+		transition: 0.5s;
+	}
+	.card3
+	{
+		position: relative;
+		float:left;
+		width: 320px;
+		height: 190px;
+		background: #fff;
+		margin: 40px;
+		border-radius: 20px;
+		box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+		transition: 0.5s;
+	}
+
+	.card:hover, .card2:hover, .card3:hover
+	{
+		height:450px;
+	}
+	
+	.imgBx, .imgBx2
+	{
+		position: absolute;
+		left: 50%; top: -50px; 
+		transform: translateX(-50%);
+		width: 150px;
+		height: 150px;
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: 0 15x 50px rgba(0,0,0,0.35);
+		overflow: hidden;
+		transition: 0.5s
+	}
+
+  .imgBx3{
+    position: absolute;
+		left: 50%; top: -50px; 
+		transform: translateX(-50%);
+		width: 150px;
+		height: 160px;
+		background: #fff;
+		border-radius: 20px;
+		box-shadow: 0 15x 50px rgba(0,0,0,0.35);
+		overflow: hidden;
+		transition: 0.5s
+  }
+	
+	
+		.card:hover .imgBx, .card2:hover .imgBx2, .card3:hover .imgBx3
+		{
+			width: 220px;
+			height: 220px;
+		}
+		
+		.imgBx img, .imgBx2 img, .imgBx3 img
+		{
+			position: absolute;
+			top: 0; left: 0; 
+			width: 100%; height: 100%;
+			object-fit: cover;
+		}
+
+	.card .content, .card2 .content2, .card3 .content3
+	{
+		position: absolute;
+		width: 100%; height: 100%;
+		display: flex;
+		padding: 20px;
+		justify-content: center;
+		align-items: flex-end;
+		overflow: hidden;
+	}
+	
+	.card .content .details 
+	{
+		transform: translateY(168px);
+		transition: 0.5s;
+	}
+	.card2 .content2 .details2
+	{
+		transform: translateY(187px);
+		transition: 0.5s;
+	}
+	.card3 .content3 .details3
+	{
+		transform: translateY(190px);
+		transition: 0.5s;
+	}
+	
+	.card:hover .content .details 
+	{
+		transform: translateY(0px);
+		transition: 0.5s;
+	}
+	.card2:hover .content2 .details2
+	{
+		transform: translateY(20px);
+		transition: 0.5s;
+	}
+	.card3:hover .content3 .details3
+	{
+		transform: translateY(20px);
+		transition: 0.5s;
+	}
+	
+	.before
+	{
+	    margin-left: 80px;
+	}
+
+  .info{
+    color:white; 
+    font-family: Consolas, Monaco, monospace;
+    font-style: bold; 
+    font-size: 20px;
+    text-align: center;
+  }
+
+	
+	.timer{
+    display: flex;
+    color: #fff;
+    font-family: Consolas, Monaco, monospace;
+    /* font-size: 10px;
+    align-content: center; */
+}
+
+.timer div{
+    flex-basis: 100px ;
+}
+
+.timer p{
+    font-size: 40px ;
+}
+
+.days p{
+color:red;
+}
+
+.minutes p{
+color:red;
+}
