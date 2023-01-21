@@ -1,8 +1,8 @@
-		/* * {
-			margin: 0;
-			padding: 0;
-		} */
 
+    html {
+        overflow-x: hidden;
+        margin-right: calc(-1 * (100vw - 100%));
+      }
 		.background {
 			background: black;
 			background-blend-mode: darken;
@@ -207,7 +207,8 @@
           @media screen and (min-width: 1000px) {
             
             .timer{
-              margin-left: 600px;
+              position: relative;
+              text-align: center;
             }
             /*.det {*/
             /*    margin-right: 50px;*/
@@ -220,8 +221,8 @@
 .speakers
 {
 
-width: 100%;
-display: inline-block;
+  width: 100%;
+  display: inline-block;
 
 }
         
@@ -362,7 +363,7 @@ display: inline-block;
     font-family: Consolas, Monaco, monospace;
     font-style: bold; 
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
   }
 
 	
@@ -370,6 +371,7 @@ display: inline-block;
     display: flex;
     color: #fff;
     font-family: Consolas, Monaco, monospace;
+    justify-content: center;
     /* font-size: 10px;
     align-content: center; */
 }
@@ -388,4 +390,27 @@ color:red;
 
 .minutes p{
 color:red;
+}
+
+
+.team{
+  resize: both;
+  overflow: auto;
+}
+
+.sponsors{
+  resize: both;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
