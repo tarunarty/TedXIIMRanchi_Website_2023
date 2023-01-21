@@ -392,10 +392,16 @@ color:red;
 }
 
 
-.team ,.sponsors{
+.team{
   resize: both;
   overflow: auto;
 }
+
+.sponsors{
+  resize: both;
+  overflow: hidden;
+}
+
 .column {
   float: left;
   width: 33.33%;
