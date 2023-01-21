@@ -5,10 +5,10 @@
 <head>
     <meta name = "viewport" content=" width=device-width, initial-scale=1.0">
     <title>TEDxIIMRanchi</title>
-    <link href="style.css" rel="stylesheet" type = "text/css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link href="styling.css" rel="stylesheet" type = "text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <script src="script.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="JavaScript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -23,13 +23,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                    
             </button>
-            <a href=""><img src="images/logo-white.png" style="width:200px"></a>
+            <a href=""><img id="home" src="logo-white.png" style="width:200px"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav" style="margin-left:180px; color:white; font-family: Consolas, Monaco, monospace;font-style: bold; font-size: 20px;">
-              <li><a href="#" style="color: red;">Home</a></li>
-              <li><a href="#" style="color: red;">Sponsors</a></li>
-              <li><a href="#" style="color: red;">Contact Us</a></li>
+              <li><a href="#home" style="color: red;">Home</a></li>
+              <li><a href="#speaker" style="color: red;">Speakers</a></li>
+              <li><a href="#organiser" style="color: red;">Team</a></li>
+              <li><a href="#sponsor" style="color: red;">Sponsors</a></li>
+              <li><a href="#contactus" style="color: red;">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -67,24 +69,24 @@
       </section> -->
 
       <section class="showcase" style="background-color: black;">
-        <video src="images/TedxIIMRanchi.mp4" muted loop autoplay></video>
+        <video src="TedxIIMRanchi.mp4" muted loop autoplay></video>
       </section>
       
-      <section>
+      <!-- <section>
           <div class = "info">
-            <h1 id="venue" style="color: red;">Venue</h1>
-            <h2 id="name">IIM Ranchi Permanent Campus</h2>
+            <h1 class="venue" style="color: red;">Venue</h1>
+            <h2 class="name">IIM Ranchi Permanent Campus</h2>
           </div>                          
-          <div class="timer">
-              <div class = "days">
+          <div class="timer container text-center">
+              <div class = "days col-lg-4 col-lg-offset-4">
                   <p id="days">00</p>
                   <span style="color: red;">Days</span>
               </div>
-              <div>
-                  <p id="hours">00</p>
+              <div class="col-lg-4 col-lg-offset-4">
+                  <p id="hours ">00</p>
                   <span>Hours</span>
               </div>
-              <div>
+              <div class="col-lg-4 col-lg-offset-4">
                   <p id="minutes" style="color: red;">00</p>
                   <span style="color: red;">Minutes</span>
               </div>
@@ -93,19 +95,46 @@
                   <span>Seconds</span>
               </div>
           </div>
-      </section>
+      </section> -->
+
+      <section>
+        <div class="row">
+            <div class = "info">
+            <h1 class="venue" style="color: red;" align = "center">Venue</h1>
+            <h2 class="name" align = "center">IIM Ranchi Permanent Campus</h2>
+            </div>  
+        </div> 
+        <div class="row timer">                    
+                <div class = "days">
+                    <p id="days">00</p>
+                    <span style="color: red;">Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes" style="color: red;">00</p>
+                    <span style="color: red;">Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+        </div>
+    </section>
       
       <!--speakers-->
 	  <section class="speakers" style="background-color: red;">
 		  
 		  <br>
-		  <h1 align="center" color=black font-family="Helvetica"><b>THE SPEAKERS</b></h1>
+		  <h1 id="speaker" align="center" color=black font-family="Helvetica"><b>THE SPEAKERS</b></h1>
 		  <br>
 		  <!--sp1-->
-      <div style="display: inline-block;">
+      <div class="row-  speaker" style="display: inline-block;">
         <div class="card">
-          <div class="imgBx">
-            <img src="images/Jyoti K Parikh.png">
+          <div class="imgBx"> 
+            <img src="Jyoti K Parikh.png">
           </div>
           <div class = "content">
             <div class = "details">
@@ -120,7 +149,7 @@
         <!--sp2-->
         <div class="card2">
           <div class="imgBx2">
-            <img src="images/Rajan Singh.JPG">
+            <img src="Rajan Singh.JPG">
           </div>
           <div class = "content2">
             <div class = "details2">
@@ -132,24 +161,9 @@
             </div>  
           </div>
         </div>
-        <!--sp3-->
-        <!-- <div class="card3">
-          <div class="imgBx3">
-            <img src="ananda shankar.jpeg">
-          </div>
-          <div class = "content3" style="margin-top: 20px;">
-            <div class = "details3">
-              <h3 align="center"><b>Dr Ananda Shankar Jayant</b></h3>
-              <h5 align="center"><b>Classical Dancer, Choreographer, Scholar</b></h5>
-              <div class = "data3">
-                <p>Dr. Ananda Shankar Jayant inhabits the worlds of arts, administration, and academics, straddling them with equal ease. Celebrated as one of India's most eminent and renowned classical dancers, choreographers, and dance scholars, Ananda's artistic body of work, spans mythologies and abstraction, historical chronicles and women studies, poetry, abstraction, philosophy, and humour.</p>
-              </div>
-            </div>  
-          </div>
-        </div> -->
         <div class="card3">
           <div class="imgBx3">
-            <img src="images/Ajay Chopra.jpg">
+            <img src="Ajay Chopra.jpg">
           </div>
           <div class = "content3">
             <div class = "details3">
@@ -163,9 +177,71 @@
         </div>
     </div>
 		  
-		  <br>
 	  </section>
 
+    <section class="team" style="background-color: white">
+      <h1 id="organiser" align="center"><b>ORGANISERS</b></h1>
+      <h4 align="center" style="color: red;"><b>Licensee: <span style="color: black;">Ayush Kumar Das</span></b></h4>
+      <h4 align="center" style="color: red;"><b>Co-licensee: <span style="color: black;">Aditya Goel</span></b></h4>
+      <div class="row">
+        <div class="column">
+          <h3 style="color: red;"><b>Curation</b></h3>
+          <h5><b>Ayush Kumar Das</b></h5>
+          <h5><b>Parvati K Nair</b></h5>
+          <h5><b>Sonali Singh</b></h5>
+          <h5><b>Vatsala Choudhary</b></h5></div>
+        <div class="column">
+          <h3 style="color: red;"><b>Operations</b></h3>
+          <h5><b>Abhinav Kohli</b></h5>
+          <h5><b>Pallavi Singh</b></h5>
+          <h5><b>Shivam Kalra</b></h5>
+          <h5><b>Vijay Ratan</b></h5>
+          </div>
+        <div class="column">
+          <h3 style="color: red;"><b>Marketing</b></h3>
+          <h5><b>Anand Kumar</b></h5>
+          <h5><b>Even Tarash Tudu</b></h5>
+          <h5><b>Karthikeyan D</b></h5>
+          <h5><b>Yashna Gupta</b></h5>
+          </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <h3 style="color: red;"><b>Creatives</b></h3>
+          <h5><b>Aarsha Karjee</b></h5>
+          <h5><b>Mansi Bhargava</b></h5>
+          <h5><b>Rishabh Saxena</b></h5>
+        </div>
+        <div class="column">
+          <h3 style="color: red;"><b>IT</b></h3>
+          <h5><b>Aditya Gurbaxani</b></h5>
+          <h5><b>Aswin C</b></h5>
+          <h5><b>Darshan Patil</b></h5>
+          <h5><b>Gaiakwad Saurabh R</b></h5>
+        </div>
+        <div class="column">
+          <h3 style="color: red;"><b>Sponsorship</b></h3>
+          <h5><b>Aditya Goel</b></h5>
+          <h5><b>Devashish Verma	</b></h5>
+          <h5><b>Sakshi Garg</b></h5>
+          <h5><b>Aditi Jain</b></h5>
+        </div>
+      </div>
+      <br></br>
+    </section>
+
+    <section class="sponsors" style="background-color: white">
+      <h1 id="sponsor" align="center"><b>SPONSORS</b></h1>
+      <br></br>
+      <div class="row">
+        <div class="column"><p></p></div>
+        <div class="column">
+          <img src="CBI-logo.jpg" width="100" height="100">
+        </div>
+        <div class="column"><p></p></div>
+      </div>
+    <br></br>
+    </section>
 
       <footer class="text-center text-lg-start bg-light text-muted" style="color:white; font-family: Consolas, Monaco, monospace; background-color: black; margin-top: 50px; ">
         <!-- Section: Social media -->
@@ -244,11 +320,11 @@
       
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 contact">
-                <h4 class="text-uppercase fw-bold mb-4" style="color: red;">Contact</h4>
+                <h4 id="contactus" class="text-uppercase fw-bold mb-4" style="color: red;">Contact</h4>
                 <!--<p style="display: inline-block;white-space: nowrap;"><i class="fa fa-home me-3"></i> Nayasarai Road, Ranchi 834004, IND</p>-->
                  <p>
                   <i class="fa fa-envelope me-3"></i>
-                  tedx@iiimranchi.ac.in
+                  tedx@iimranchi.ac.in
                 </p>
                 <p style="display: inline-block;white-space: nowrap;"><i class="fa fa-phone me-3"></i> + 91 94370 30170 - <b>Ayush Kumar Das</b></p>
                 <p style="display: inline-block;white-space: nowrap;"><i class="fa fa-phone me-3"></i> + 91 98761 90910 - <b>Aditya Goel</b></p>
